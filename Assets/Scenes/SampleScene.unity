@@ -283,8 +283,30 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1067004905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8419581611485941596, guid: f83baa8af13f83640a96eb95c2b50185,
+    type: 3}
+  m_PrefabInstance: {fileID: 1084558466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1067004906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067004905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16ad9ee39fa4644290edc108dc15555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUp: 273
+  moveDown: 274
+  speed: 10
+  boundY: 4
 --- !u!1001 &1084558466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -330,7 +352,7 @@ PrefabInstance:
     - target: {fileID: 3613329576198031825, guid: f83baa8af13f83640a96eb95c2b50185,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3613329576198031825, guid: f83baa8af13f83640a96eb95c2b50185,
         type: 3}
@@ -350,10 +372,32 @@ PrefabInstance:
     - target: {fileID: 8419581611485941596, guid: f83baa8af13f83640a96eb95c2b50185,
         type: 3}
       propertyPath: m_Name
-      value: player1_paddle
+      value: player2_paddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f83baa8af13f83640a96eb95c2b50185, type: 3}
+--- !u!1 &1606642500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8419581611485941596, guid: f83baa8af13f83640a96eb95c2b50185,
+    type: 3}
+  m_PrefabInstance: {fileID: 7410475201889324648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1606642505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606642500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16ad9ee39fa4644290edc108dc15555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveUp: 119
+  moveDown: 115
+  speed: 10
+  boundY: 4
 --- !u!1001 &3466540440798528280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -404,7 +448,7 @@ PrefabInstance:
     - target: {fileID: 9222433397283022266, guid: 30f258642a549784c9491dc358a3db6b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9222433397283022266, guid: 30f258642a549784c9491dc358a3db6b,
         type: 3}
@@ -468,7 +512,7 @@ PrefabInstance:
     - target: {fileID: 3613329576198031825, guid: f83baa8af13f83640a96eb95c2b50185,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3613329576198031825, guid: f83baa8af13f83640a96eb95c2b50185,
         type: 3}
@@ -488,7 +532,7 @@ PrefabInstance:
     - target: {fileID: 8419581611485941596, guid: f83baa8af13f83640a96eb95c2b50185,
         type: 3}
       propertyPath: m_Name
-      value: player2_paddle
+      value: player1_paddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f83baa8af13f83640a96eb95c2b50185, type: 3}
