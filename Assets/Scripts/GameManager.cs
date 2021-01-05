@@ -36,8 +36,24 @@ public class GameManager : MonoBehaviour
     private void OnGUI()
     {
         GUI.skin = layout;
-        GUI.Label(new Rect(Screen.width / 2 - 150, 20, 150, 150), "" + PlayerScore1);
-        GUI.Label(new Rect(Screen.width / 2 + 150, 20, 150, 150), "" + PlayerScore2);
+        GUI.Label(new Rect(Screen.width / 2 - 150, 20, 200, 200), "" + PlayerScore1);
+        GUI.Label(new Rect(Screen.width / 2 + 150, 20, 200, 200), "" + PlayerScore2);
 
+        if (GUI.Button(new Rect(Screen.width / 2 - 60, 35, 120, 53), "RESTART"))
+        {
+            PlayerScore1 = 0;
+            PlayerScore2 = 0;
+            theBall.SendMessage("RestartGame", null, SendMessageOptions.RequireReceiver);
+        }
+
+        if(PlayerScore1 == 10)
+        {
+            GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "Player 1 Wins");
+            theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
+        } else if (PlayerScore2 == 10)
+        {
+            GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "Player 2 Wins");
+            theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
+        }
     }
 }
