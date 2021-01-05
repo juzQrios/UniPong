@@ -6,6 +6,7 @@ public class PlayerControls : MonoBehaviour
 {
     public KeyCode moveUp = KeyCode.W;
     public KeyCode moveDown = KeyCode.S;
+    public KeyCode quitKey = KeyCode.Escape;
     public float speed = 10.0f;
     public float boundY = 4.0f;
     private Rigidbody2D rb2d;
@@ -27,6 +28,10 @@ public class PlayerControls : MonoBehaviour
         else if (Input.GetKey(moveDown))
         {
             vel.y = -speed;
+        }
+        else if (Input.GetKey(quitKey))
+        {
+            Application.Quit();
         }
         else
         {

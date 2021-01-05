@@ -339,6 +339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveUp: 273
   moveDown: 274
+  quitKey: 8
   speed: 10
   boundY: 4
 --- !u!1001 &1084558466
@@ -531,6 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveUp: 119
   moveDown: 115
+  quitKey: 27
   speed: 10
   boundY: 4
 --- !u!1 &1720233475
